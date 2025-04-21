@@ -19,34 +19,34 @@ export default function Home() {
             <Link href="/" className="flex items-center">
               <VitaLogo className="size-20" />
             </Link>
-            <nav className="hidden ml-10 space-x-8 md:flex">
+            <nav className="ml-10 space-x-8 md:flex">
               <Link
                 href="#how-it-works"
-                className="text-sm font-medium text-gray-500 hover:text-gray-900"
+                className="hidden md:flex text-sm font-medium text-gray-500 hover:text-gray-900"
               >
                 Cómo funciona
               </Link>
               <Link
                 href="#pricing-section"
-                className="text-sm font-medium text-gray-500 hover:text-gray-900"
+                className="hidden md:flex text-sm font-medium text-gray-500 hover:text-gray-900"
               >
                 Precios
               </Link>
               <Link
                 href="#features-section"
-                className="text-sm font-medium text-gray-500 hover:text-gray-900"
+                className="hidden md:flex text-sm font-medium text-gray-500 hover:text-gray-900"
               >
                 Funcionalidades
               </Link>
               <Link
                 href="#faq-section"
-                className="text-sm font-medium text-gray-500 hover:text-gray-900"
+                className="hidden md:flex text-sm font-medium text-gray-500 hover:text-gray-900"
               >
                 FAQ
               </Link>
               <Link
                 href="#contact-section"
-                className="text-sm font-medium text-gray-500 hover:text-gray-900"
+                className="hidden md:flex text-sm font-medium text-gray-500 hover:text-gray-900"
               >
                 Contacto
               </Link>
@@ -55,7 +55,7 @@ export default function Home() {
           <div className="flex items-center space-x-4">
             <Link
               href="https://vitasalud.softr.app/login"
-              className="hidden text-sm font-medium text-gray-500 hover:text-gray-900 md:block"
+              className="text-sm font-medium text-gray-500 hover:text-gray-900"
             >
               Iniciar sesión
             </Link>
@@ -92,7 +92,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                 <Link
-                  href="#"
+                  href="#features-section"
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-gray-700 bg-gray-100 border border-transparent rounded-md shadow-sm sm:w-auto hover:bg-gray-200"
                 >
                   Saber más
@@ -505,13 +505,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 mb-16">
             <Link
-              href="#"
+              href="#contact-section"
               className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-teal-700 bg-white border border-transparent rounded-md shadow-sm sm:w-auto hover:bg-gray-100"
             >
               <Play className="w-4 h-4 mr-2" /> Ver demostración
             </Link>
             <Link
-              href="#"
+              href="https://vitasalud.softr.app/registro"
               className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-teal-500 border border-transparent rounded-md shadow-sm sm:w-auto hover:bg-teal-400"
             >
               Comienza ahora
@@ -528,18 +528,18 @@ export default function Home() {
               </p>
               <div className="flex space-x-6 justify-center items-center  mt-4 md:mt-0">
                 <Link
-                  href="tel:+584242782759"
+                  href=" https://wa.me/13057950686 "
                   className="text-sm text-teal-200 hover:text-white flex flex-row justify-center items-center gap-2"
                 >
                   <PhoneIcon className="size-4" />
-                  <span>+58 (424) 27 82 759</span>
+                  <span>+1 (305) 79 50 686</span>
                 </Link>
                 <Link
-                  href="mailto:info@avilatek.com?subject=Consulta VITA&body=Buenos días, quisiera solicitar información sobre el software VITA..."
+                  href="mailto:pm@avilatek.com?subject=Consulta VITA&body=Buenos días, quisiera solicitar información sobre el software VITA..."
                   className="text-sm text-teal-200 hover:text-white flex flex-row justify-center items-center gap-2"
                 >
                   <EmailIcon className="size-4" />
-                  <span>info@avilatek.com</span>
+                  <span>pm@avilatek.com</span>
                 </Link>
               </div>
               <div className="flex space-x-6 mt-4 md:mt-0">
@@ -554,12 +554,6 @@ export default function Home() {
                   className="text-sm text-teal-200 hover:text-white"
                 >
                   Privacy
-                </Link>
-                <Link
-                  href="#"
-                  className="text-sm text-teal-200 hover:text-white"
-                >
-                  Cookies
                 </Link>
               </div>
             </div>
