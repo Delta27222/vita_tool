@@ -140,6 +140,56 @@ export default function Home() {
         {/* Pricing Section */}
         <section className="py-12 bg-gray-50 md:py-20" id="pricing-section">
           <div className="container px-4 mx-auto md:px-6">
+            <div className="max-w-2xl mx-auto text-center mb-12">
+              <h2 className="mb-4 text-3xl tracking-tight text-gray-900">
+                Entérate de nuestro <span className="font-medium">precio especial</span>
+              </h2>
+              <p className="text-gray-600">
+                Por ser de los primeros usuarios, aprovecha este precio especial de lanzamiento, ¡No te quedes atrás!
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:flex md:flex-col justify-center items-center gap-8 max-w-4xl mx-auto">
+              {/* Plan */}
+              <div className="flex flex-col p-6 bg-white rounded-lg shadow-md  md:w-[50%]">
+                <div className="mb-6">
+                  <h3 className="text-sm font-bold text-primary">Plan especial</h3>
+                  <div className="mt-2 flex items-baseline">
+                    <span className="text-4xl font-bold text-gray-900 mb-6">
+                      $14.99
+                    </span>
+                    <span className="ml-1 text-gray-500">/mes</span>
+                  </div>
+                  <p className="text-gray-600">Todo lo que necesitas para empezar, a un precio increíble.</p>
+                </div>
+                <div className="w-full h-[.6px] bg-gray-200 mb-6"/>
+                <ul className="mb-6 space-y-4 flex-1">
+                  <li className="flex items-start">
+                    <span className="mr-2 text-teal-600">✓</span>
+                    <span>Gestión de pacientes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-teal-600">✓</span>
+                    <span>Historial de citas</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-teal-600">✓</span>
+                    <span>100 pacientes incluidos</span>
+                  </li>
+                </ul>
+                <Link
+                  href="https://vitasalud.softr.app/registro"
+                  className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-teal-600 bg-white border border-teal-600 rounded-md hover:bg-teal-50"
+                >
+                  Quiero el mes de prueba <ChevronRight className="w-4 h-4 ml-1" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing Section */}
+        {/* <section className="py-12 bg-gray-50 md:py-20" id="pricing-section">
+          <div className="container px-4 mx-auto md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="mb-4 text-3xl tracking-tight text-gray-900">
                 Nuestros <span className="font-medium">precios</span>
@@ -150,7 +200,6 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 max-w-4xl mx-auto">
-              {/* Basic Plan */}
               <div className="flex flex-col p-6 bg-white rounded-lg shadow-md">
                 <div className="mb-6">
                   <h3 className="text-xl font-bold text-gray-900">Básico</h3>
@@ -183,7 +232,6 @@ export default function Home() {
                 </Link>
               </div>
 
-              {/* Premium Plan */}
               <div className="flex flex-col p-6 bg-white rounded-lg shadow-md border-2 border-teal-600">
                 <div className="mb-6">
                   <h3 className="text-xl font-bold text-gray-900">Premium</h3>
@@ -221,7 +269,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Features Section */}
         <section className="py-12 bg-white md:py-20" id="features-section">
