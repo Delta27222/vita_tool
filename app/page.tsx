@@ -231,10 +231,6 @@ export default function Home() {
                 Explora las{" "}
                 <span className="font-medium">funcionalidades de Vita</span>
               </h2>
-              <p className="text-gray-600">
-                Lorem ipsum dolor sit amet consectetur. Erom feugiat vel velit
-                euismod id.
-              </p>
             </div>
             <div className="grid gap-8  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
               {/* Feature 1 */}
@@ -246,12 +242,9 @@ export default function Home() {
                   height={300}
                   className="w-full h-full object-cover absolute inset-0"
                 />
-                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[25%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
+                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[22%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
                 <div className="absolute inset-0 p-4 flex flex-col justify-end text-black">
                   <h3 className="text-lg">IA Integrada</h3>
-                  <p className="text-xs">
-                    Lorem ipsum dolor sit amet consectetur
-                  </p>
                 </div>
               </div>
 
@@ -264,12 +257,9 @@ export default function Home() {
                   height={200}
                   className="w-full h-full object-cover absolute inset-0"
                 />
-                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[25%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
+                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[22%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
                 <div className="absolute inset-0 p-4 flex flex-col justify-end text-black">
                   <h3 className="text-lg">Gestión de pacientes</h3>
-                  <p className="text-xs">
-                    Lorem ipsum dolor sit amet consectetur
-                  </p>
                 </div>
               </div>
 
@@ -282,12 +272,9 @@ export default function Home() {
                   height={200}
                   className="w-full h-full object-cover absolute inset-0"
                 />
-                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[25%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
+                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[22%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
                 <div className="absolute inset-0 p-4 flex flex-col justify-end text-black">
                   <h3 className="text-lg">Gestión de consultas</h3>
-                  <p className="text-xs">
-                    Lorem ipsum dolor sit amet consectetur
-                  </p>
                 </div>
               </div>
 
@@ -300,14 +287,11 @@ export default function Home() {
                   height={200}
                   className="w-full h-full object-cover absolute inset-0"
                 />
-                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[25%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
+                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[22%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
                 <div className="absolute inset-0 p-4 flex flex-col justify-end text-black">
                   <h3 className="text-lg font-normal">
                     Notificaciones de citas
                   </h3>
-                  <p className="text-xs">
-                    Lorem ipsum dolor sit amet consectetur
-                  </p>
                 </div>
               </div>
             </div>
