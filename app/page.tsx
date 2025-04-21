@@ -180,7 +180,7 @@ export default function Home() {
                 </ul>
                 <Link
                   href="#"
-                  className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-teal-600 bg-white border border-teal-600 rounded-md hover:bg-teal-50"
+                  className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-teal-600 border border-transparent rounded-md hover:bg-teal-700"
                 >
                   Seleccionar plan <ChevronRight className="w-4 h-4 ml-1" />
                 </Link>
