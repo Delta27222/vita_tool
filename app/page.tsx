@@ -169,11 +169,15 @@ export default function Home() {
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-teal-600">✓</span>
-                    <span>Historial de citas</span>
+                    <span>Confirmación de citas</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-teal-600">✓</span>
-                    <span>100 pacientes incluidos</span>
+                    <span>Gestión de pagos</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-teal-600">✓</span>
+                    <span>Resumen del paciente</span>
                   </li>
                 </ul>
                 <Link
