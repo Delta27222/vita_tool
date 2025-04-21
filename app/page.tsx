@@ -157,7 +157,7 @@ export default function Home() {
                     <span className="text-4xl font-bold text-gray-900 mb-6">
                       $14.99
                     </span>
-                    <span className="ml-1 text-gray-500">/mes</span>
+                    <span className="ml-1 text-gray-500">/ mes</span>
                   </div>
                   <p className="text-gray-600">Todo lo que necesitas para empezar, a un precio increíble.</p>
                 </div>
