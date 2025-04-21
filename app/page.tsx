@@ -77,7 +77,7 @@ export default function Home() {
               <p className="mb-3 text-sm font-medium text-teal-600">
                 Vita by Avila Tek.
               </p>
-              <h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 md:text-5xl leading-[72px]">
+              <h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 md:text-5xl leading-[72px] md:leading-[72px]">
                 <span>Gestiona </span>
                 <span className="font-normal">pacientes. </span>
                 <span>Optimiza </span>
