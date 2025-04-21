@@ -244,15 +244,15 @@ export default function Home() {
             </div>
             <div className="grid gap-8  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
               {/* Feature 1 */}
-              <div className="relative overflow-hidden rounded-lg h-48 group">
+              <div className="relative overflow-hidden rounded-lg h-[280px] group">
                 <Image
-                  src="images/vita-feature-1.jpg?height=200&width=400"
+                  src="images/vita-feature-1.jpg?height=300&width=400"
                   alt="IA Integrada"
                   width={400}
-                  height={200}
+                  height={300}
                   className="w-full h-full object-cover absolute inset-0"
                 />
-                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[35%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
+                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[25%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
                 <div className="absolute inset-0 p-4 flex flex-col justify-end text-black">
                   <h3 className="text-lg">IA Integrada</h3>
                   <p className="text-xs">
@@ -262,7 +262,7 @@ export default function Home() {
               </div>
 
               {/* Feature 2 */}
-              <div className="relative overflow-hidden rounded-lg h-48 group">
+              <div className="relative overflow-hidden rounded-lg h-[280px] group">
                 <Image
                   src="images/vita-feature-2.jpg?height=200&width=400"
                   alt="Gestión de pacientes"
@@ -270,7 +270,7 @@ export default function Home() {
                   height={200}
                   className="w-full h-full object-cover absolute inset-0"
                 />
-                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[35%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
+                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[25%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
                 <div className="absolute inset-0 p-4 flex flex-col justify-end text-black">
                   <h3 className="text-lg">Gestión de pacientes</h3>
                   <p className="text-xs">
@@ -280,7 +280,7 @@ export default function Home() {
               </div>
 
               {/* Feature 3 */}
-              <div className="relative overflow-hidden rounded-lg h-48 group">
+              <div className="relative overflow-hidden rounded-lg h-[280px] group">
                 <Image
                   src="images/vita-feature-3.jpg?height=200&width=400"
                   alt="Gestión de consultas"
@@ -288,7 +288,7 @@ export default function Home() {
                   height={200}
                   className="w-full h-full object-cover absolute inset-0"
                 />
-                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[35%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
+                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[25%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
                 <div className="absolute inset-0 p-4 flex flex-col justify-end text-black">
                   <h3 className="text-lg">Gestión de consultas</h3>
                   <p className="text-xs">
@@ -298,7 +298,7 @@ export default function Home() {
               </div>
 
               {/* Feature 4 */}
-              <div className="relative overflow-hidden rounded-lg h-48 group lg:col-start-2">
+              <div className="relative overflow-hidden rounded-lg h-[280px] group lg:col-start-2">
                 <Image
                   src="images/vita-feature-4.jpg?height=200&width=400"
                   alt="Notificaciones de citas"
@@ -306,7 +306,7 @@ export default function Home() {
                   height={200}
                   className="w-full h-full object-cover absolute inset-0"
                 />
-                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[35%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
+                <div className="absolute bottom-0 bg-white/80 backdrop-blur-sm w-full h-[25%] transition-all duration-300 group-hover:backdrop-blur-md"></div>
                 <div className="absolute inset-0 p-4 flex flex-col justify-end text-black">
                   <h3 className="text-lg font-normal">
                     Notificaciones de citas
