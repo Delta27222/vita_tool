@@ -54,13 +54,13 @@ export default function Home() {
           </div>
           <div className="flex items-center space-x-4">
             <Link
-              href="#"
+              href="https://vitasalud.softr.app/login"
               className="hidden text-sm font-medium text-gray-500 hover:text-gray-900 md:block"
             >
               Iniciar sesión
             </Link>
             <Link
-              href="#"
+              href="https://vitasalud.softr.app/registro"
               className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm hover:bg-teal-700 text-nowrap"
             >
               Prueba gratis
@@ -98,7 +98,7 @@ export default function Home() {
                   Saber más
                 </Link>
                 <Link
-                  href="#"
+                  href="https://vitasalud.softr.app/registro"
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm sm:w-auto hover:bg-teal-700"
                 >
                   Prueba gratis
@@ -109,7 +109,10 @@ export default function Home() {
         </section>
 
         {/* Mission & Product Showcase Combined Section */}
-        <section className="pt-12 pb-[15%] bg-white md:pt-20 md:pb-[10%]" id="how-it-works">
+        <section
+          className="pt-12 pb-[15%] bg-white md:pt-20 md:pb-[10%]"
+          id="how-it-works"
+        >
           <div className="container px-4 mx-auto md:px-6">
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
               <div>
@@ -120,11 +123,10 @@ export default function Home() {
                   </span>
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit duis
-                  vitae elementum. Augue ipsum vel duis vitae elementum. Sed
-                  diam feugiat lectus ipsum vel duis vitae elementum. Nuestra
-                  plataforma está diseñada para optimizar tu flujo de trabajo y
-                  mejorar la experiencia de tus pacientes.
+                  Imagina tener una herramienta que te ayuda a organizar y
+                  optimizar todos los aspectos de tu práctica, desde la
+                  interacción inicial con tus pacientes hasta la gestión de tus
+                  finanzas.
                 </p>
               </div>
               <div className="relative">
@@ -140,8 +142,7 @@ export default function Home() {
           <div className="container px-4 mx-auto md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="mb-4 text-3xl tracking-tight text-gray-900">
-                Nuestros {' '}
-                <span className="font-medium">precios</span>
+                Nuestros <span className="font-medium">precios</span>
               </h2>
               <p className="text-gray-600">
                 Lorem ipsum dolor sit amet consectetur. Erom feugiat vel velit
@@ -161,10 +162,6 @@ export default function Home() {
                   </div>
                 </div>
                 <ul className="mb-6 space-y-4 flex-1">
-                  <li className="flex items-start">
-                    <span className="mr-2 text-teal-600">✓</span>
-                    <span>Lorem ipsum dolor sit amet</span>
-                  </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-teal-600">✓</span>
                     <span>Gestión de pacientes</span>
@@ -200,10 +197,6 @@ export default function Home() {
                 <ul className="mb-6 space-y-4 flex-1">
                   <li className="flex items-start">
                     <span className="mr-2 text-teal-600">✓</span>
-                    <span>Lorem ipsum dolor sit amet</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-teal-600">✓</span>
                     <span>Gestión de pacientes</span>
                   </li>
                   <li className="flex items-start">
@@ -235,7 +228,8 @@ export default function Home() {
           <div className="container px-4 mx-auto md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="mb-4 text-3xl font-normal tracking-tight text-gray-900">
-                Explora las <span className="font-medium">funcionalidades de Vita</span>
+                Explora las{" "}
+                <span className="font-medium">funcionalidades de Vita</span>
               </h2>
               <p className="text-gray-600">
                 Lorem ipsum dolor sit amet consectetur. Erom feugiat vel velit
@@ -356,8 +350,7 @@ export default function Home() {
           <div className="container px-4 mx-auto md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="mb-4 text-3xl font-normal tracking-tight text-gray-900">
-                Preguntas {' '}
-                <span className="font-medium">frecuentes</span>
+                Preguntas <span className="font-medium">frecuentes</span>
               </h2>
               <p className="text-gray-600">
                 Todo lo que necesitas saber sobre el producto y la facturación.
@@ -374,7 +367,7 @@ export default function Home() {
                     </span>
                   </summary>
                   <p className="text-gray-600 mt-3 group-open:animate-fadeIn">
-                    Sí, puedes usar Vita de forma gratuita durante 14 días, sin
+                    Sí, puedes usar Vita de forma gratuita durante 30 días, sin
                     necesidad de introducir tu información de pago.
                   </p>
                 </details>
@@ -494,9 +487,9 @@ export default function Home() {
             id="contact-section"
           >
             <div className="flex flex-col space-y-4 md:flex-row justify-between items-center ">
-                <p className="text-sm text-teal-200 mt-4">
-                  © 2077 Avila Tek. All rights reserved.
-                </p>
+              <p className="text-sm text-teal-200 mt-4">
+                © 2025 Avila Tek. Todos los derechos reservados.
+              </p>
               <div className="flex space-x-6 justify-center items-center  mt-4 md:mt-0">
                 <Link
                   href="tel:+584242782759"
@@ -515,13 +508,13 @@ export default function Home() {
               </div>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <Link
-                  href="#"
+                  href="https://vitasalud.softr.app/terms-and-conditions"
                   className="text-sm text-teal-200 hover:text-white"
                 >
                   Terms
                 </Link>
                 <Link
-                  href="#"
+                  href="https://vitasalud.softr.app/privacy-policies"
                   className="text-sm text-teal-200 hover:text-white"
                 >
                   Privacy
