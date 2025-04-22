@@ -54,13 +54,13 @@ export default function Home() {
           </div>
           <div className="flex items-center space-x-4">
             <Link
-              href="https://vitasalud.softr.app/login"
+              href="https://www.vitasalud.app/login"
               className="text-sm font-medium text-gray-500 hover:text-gray-900"
             >
               Iniciar sesión
             </Link>
             <Link
-              href="https://vitasalud.softr.app/registro"
+              href="https://www.vitasalud.app/registro"
               className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm hover:bg-teal-700 text-nowrap"
             >
               Prueba gratis
@@ -98,7 +98,7 @@ export default function Home() {
                   Saber más
                 </Link>
                 <Link
-                  href="https://vitasalud.softr.app/registro"
+                  href="https://www.vitasalud.app/registro"
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm sm:w-auto hover:bg-teal-700"
                 >
                   Prueba gratis
@@ -181,7 +181,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <Link
-                  href="https://vitasalud.softr.app/registro"
+                  href="https://www.vitasalud.app/registro"
                   className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-teal-600 bg-white border border-teal-600 rounded-md hover:bg-teal-50"
                 >
                   Quiero el mes de prueba <ChevronRight className="w-4 h-4 ml-1" />
@@ -511,7 +511,7 @@ export default function Home() {
               <Play className="w-4 h-4 mr-2" /> Ver demostración
             </Link>
             <Link
-              href="https://vitasalud.softr.app/registro"
+              href="https://www.vitasalud.app/registro"
               className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-teal-500 border border-transparent rounded-md shadow-sm sm:w-auto hover:bg-teal-400"
             >
               Comienza ahora
