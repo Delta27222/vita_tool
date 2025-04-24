@@ -17,11 +17,8 @@ export default function Home() {
 
   React.useEffect(() => {
     const ua = navigator.userAgent.toLowerCase();
-    console.log("🚀 ~ React.useEffect ~ ua:", ua)
-    var isInstagram = (ua.indexOf('Instagram') > -1) ? true : false;
-    console.log("🚀 ~ React.useEffect ~ isInstagram:", isInstagram)
     const isSafariBrowser =
-    (ua.includes("safari") || ua.indexOf('Instagram') > -1) &&
+    ua.includes("safari")&&
     !ua.includes("chrome") &&
     !ua.includes("firefox") &&
     !ua.includes("edge") &&
@@ -150,9 +147,9 @@ export default function Home() {
                   finanzas.
                 </p>
               </div>
-              <div className="relative flex flex-col justify-start items-center border border-red-700">
+              <div className="relative flex flex-col justify-start items-center border border-blue-700">
                 <BackComputer className={`${isSafari ? 'scale-80 md:scale-95 md:mr-10' : 'scale-90'}`} />
-                <FrontComputer className={`${isSafari ? 'scale-10 left-[30px] top-[90px] md:scale-95 md:mr-10 md:left-[50px] lg:top-[130px]' : 'left-[130px] top-[130px] md:left-[120px] lg:top-[147px]'} absolute md:flex"`} />
+                <FrontComputer className={`${isSafari ? 'scale-50 left-[30px] top-[90px] md:scale-95 md:mr-10 md:left-[50px] lg:top-[130px]' : 'scale-75 left-[130px] top-[130px] md:left-[120px] lg:top-[147px]'} absolute md:flex"`} />
               </div>
             </div>
           </div>
