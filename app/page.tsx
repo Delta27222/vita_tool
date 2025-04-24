@@ -1,3 +1,5 @@
+'use client'
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, ChevronRight, Play } from "lucide-react";
@@ -8,10 +10,29 @@ import {
   PhoneIcon,
   VitaLogo,
 } from "@/components/icons";
+import { formatPhoneNumber } from "@/lib/utils";
 
 export default function Home() {
+  const [isSafari, setIsSafari] = React.useState(false);
+
+  React.useEffect(() => {
+    const ua = navigator.userAgent.toLowerCase();
+    console.log("🚀 ~ React.useEffect ~ ua:", ua)
+    var isInstagram = (ua.indexOf('Instagram') > -1) ? true : false;
+    console.log("🚀 ~ React.useEffect ~ isInstagram:", isInstagram)
+    const isSafariBrowser =
+    (ua.includes("safari") || ua.indexOf('Instagram') > -1) &&
+    !ua.includes("chrome") &&
+    !ua.includes("firefox") &&
+    !ua.includes("edge") &&
+    !ua.includes("opr");
+    console.log("🚀 ~ React.useEffect ~ isSafariBrowser:", isSafariBrowser)
+
+    setIsSafari(isSafariBrowser);
+  }, []);
+
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full bg-white border-b">
         <div className="container flex items-center justify-between h-16 px-4 mx-auto md:px-6">
@@ -40,13 +61,13 @@ export default function Home() {
               </Link>
               <Link
                 href="#faq-section"
-                className="hidden md:flex text-sm font-medium text-gray-500 hover:text-gray-900"
+                className="hidden lg:flex text-sm font-medium text-gray-500 hover:text-gray-900"
               >
                 FAQ
               </Link>
               <Link
                 href="#contact-section"
-                className="hidden md:flex text-sm font-medium text-gray-500 hover:text-gray-900"
+                className="hidden lg:flex text-sm font-medium text-gray-500 hover:text-gray-900"
               >
                 Contacto
               </Link>
@@ -54,14 +75,14 @@ export default function Home() {
           </div>
           <div className="flex items-center space-x-4">
             <Link
-              href="https://www.vitasalud.app/login"
-              className="text-sm font-medium text-gray-500 hover:text-gray-900"
+              href={process.env.NEXT_PUBLIC_VITA_LOGIN_LINK || "#"}
+              className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium  text-teal-600 bg-white border border-teal-600 rounded-md hover:bg-teal-50 text-nowrap"
             >
               Iniciar sesión
             </Link>
             <Link
-              href="https://www.vitasalud.app/registro"
-              className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm hover:bg-teal-700 text-nowrap"
+              href={process.env.NEXT_PUBLIC_VITA_REGISTER_LINK || "#"}
+              className="hidden md:inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm hover:bg-teal-700 text-nowrap"
             >
               Prueba gratis
             </Link>
@@ -77,7 +98,7 @@ export default function Home() {
               <p className="mb-3 text-sm font-medium text-teal-600">
                 Vita by Avila Tek.
               </p>
-              <h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 md:text-5xl leading-[72px] md:leading-[60px]">
+              <h1 className="mb-6 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl leading-[50px] md:leading-[60px]">
                 <span>Gestiona </span>
                 <span className="font-normal">pacientes. </span>
                 <span>Optimiza </span>
@@ -98,7 +119,7 @@ export default function Home() {
                   Saber más
                 </Link>
                 <Link
-                  href="https://www.vitasalud.app/registro"
+                  href={process.env.NEXT_PUBLIC_VITA_REGISTER_LINK || "#"}
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm sm:w-auto hover:bg-teal-700"
                 >
                   Prueba gratis
@@ -129,9 +150,9 @@ export default function Home() {
                   finanzas.
                 </p>
               </div>
-              <div className="relative">
-                <BackComputer className="scale-90" />
-                <FrontComputer className="absolute left-[130px] top-[130px] md:left-[120px] lg:top-[147px] md:flex" />
+              <div className="relative flex flex-col justify-start items-center border border-red-700">
+                <BackComputer className={`${isSafari ? 'scale-80 md:scale-95 md:mr-10' : 'scale-90'}`} />
+                <FrontComputer className={`${isSafari ? 'scale-10 left-[30px] top-[90px] md:scale-95 md:mr-10 md:left-[50px] lg:top-[130px]' : 'left-[130px] top-[130px] md:left-[120px] lg:top-[147px]'} absolute md:flex"`} />
               </div>
             </div>
           </div>
@@ -181,7 +202,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <Link
-                  href="https://www.vitasalud.app/registro"
+                  href={process.env.NEXT_PUBLIC_VITA_REGISTER_LINK || "#"}
                   className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-teal-600 bg-white border border-teal-600 rounded-md hover:bg-teal-50"
                 >
                   Quiero el mes de prueba <ChevronRight className="w-4 h-4 ml-1" />
@@ -511,7 +532,7 @@ export default function Home() {
               <Play className="w-4 h-4 mr-2" /> Ver demostración
             </Link>
             <Link
-              href="https://www.vitasalud.app/registro"
+              href={process.env.NEXT_PUBLIC_VITA_REGISTER_LINK || "#"}
               className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-teal-500 border border-transparent rounded-md shadow-sm sm:w-auto hover:bg-teal-400"
             >
               Comienza ahora
@@ -528,29 +549,29 @@ export default function Home() {
               </p>
               <div className="flex space-x-6 justify-center items-center  mt-4 md:mt-0">
                 <Link
-                  href=" https://wa.me/13057950686 "
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_VITA_PHONE_NUMBER}`}
                   className="text-sm text-teal-200 hover:text-white flex flex-row justify-center items-center gap-2"
                 >
                   <PhoneIcon className="size-4" />
-                  <span>+1 (305) 79 50 686</span>
+                  <span>{formatPhoneNumber(process.env.NEXT_PUBLIC_VITA_PHONE_NUMBER || '4242782759')}</span>
                 </Link>
                 <Link
-                  href="mailto:pm@avilatek.com?subject=Consulta VITA&body=Buenos días, quisiera solicitar información sobre el software VITA..."
+                  href={`mailto:${process.env.NEXT_PUBLIC_VITA_CONTACT_EMAIL || "info@avilatek.com"}?subject=Consulta VITA&body=Buenos días, quisiera solicitar información sobre el software VITA...`}
                   className="text-sm text-teal-200 hover:text-white flex flex-row justify-center items-center gap-2"
                 >
                   <EmailIcon className="size-4" />
-                  <span>pm@avilatek.com</span>
+                  <span>{process.env.NEXT_PUBLIC_VITA_CONTACT_EMAIL || "info@avilatek.com"}</span>
                 </Link>
               </div>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <Link
-                  href="https://vitasalud.softr.app/terms-and-conditions"
+                  href={process.env.NEXT_PUBLIC_VITA_TERMS_LINK || "#"}
                   className="text-sm text-teal-200 hover:text-white"
                 >
                   Terms
                 </Link>
                 <Link
-                  href="https://vitasalud.softr.app/privacy-policies"
+                  href={process.env.NEXT_PUBLIC_VITA_POLICIES_LINK || "#"}
                   className="text-sm text-teal-200 hover:text-white"
                 >
                   Privacy
