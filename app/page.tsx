@@ -137,6 +137,7 @@ export default function Home() {
                   <span className="font-medium">Nuestra misión </span>
                   <span className="font-normal">
                     es mejorar la gestión de tus pacientes
+                    {isSafari ? 'ES SAFARIII' : 'NO ES SAFARIII'}
                   </span>
                 </h2>
                 <p className="text-gray-600 mb-6">
@@ -146,9 +147,9 @@ export default function Home() {
                   finanzas.
                 </p>
               </div>
-              <div className="relative flex flex-col justify-start items-center border border-blue-700">
+              <div className="relative flex flex-col justify-start items-center border border-red-700">
                 <BackComputer className={`${isSafari ? 'scale-80 md:scale-95 md:mr-10' : 'scale-90'}`} />
-                <FrontComputer className={`${isSafari ? 'scale-60 left-[30px] top-[90px] md:scale-95 md:mr-10 md:left-[50px] lg:top-[130px]' : 'scale-75 left-[50px] top-[130px] md:left-[120px] lg:top-[147px]'} absolute md:flex"`} />
+                <FrontComputer className={`${isSafari ? 'scale-60 left-[30px] top-[90px] md:scale-95 md:mr-10 md:left-[50px] lg:top-[130px]' : 'scale-50 left-[50px] top-[130px] md:left-[120px] lg:top-[147px]'} absolute md:flex"`} />
               </div>
             </div>
           </div>
