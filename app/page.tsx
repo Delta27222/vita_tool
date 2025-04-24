@@ -149,7 +149,7 @@ export default function Home() {
               </div>
               <div className="relative flex flex-col justify-start items-center border border-red-700">
                 <BackComputer className={`${isSafari ? 'scale-80 md:scale-95 md:mr-10' : 'scale-90'}`} />
-                <FrontComputer className={`${isSafari ? 'scale-50 left-[30px] top-[90px] md:scale-95 md:mr-10 md:left-[50px] lg:top-[130px]' : 'scale-75 left-[50px] top-[130px] md:left-[120px] lg:top-[147px] md:scale-50'} absolute md:flex"`} />
+                <FrontComputer className={`${isSafari ? 'scale-75 left-[30px] top-[90px] md:scale-95 md:mr-10 md:left-[50px] lg:top-[130px]' : 'scale-75 left-[50px] top-[130px] md:left-[120px] lg:top-[147px] '} absolute md:flex"`} />
               </div>
             </div>
           </div>
